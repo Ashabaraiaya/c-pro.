@@ -1,0 +1,35 @@
+//write aprogram to ganarate arithmetic o[peration class calulate display all methods of arithmetic operation on inputed values from user
+#include<iostream.h>
+#include<conio.h>
+class arith
+{
+ public:
+ int val1=0,val2=0;
+ void inputdata(int first,int second)
+ { val1=first;
+   val2=second;}
+ void addition()
+ {cout<<"addition is:"<<(val1+val2)<<endl;}
+ void substraction()
+ {cout<<"substraction is:"<<(val1-val2)<<endl;}
+ void multiplication()
+ {cout<<"multiplication is:"<<(val1*val2)<<endl;}
+ void division()
+ {cout<<"division is:"<<(val1/val2)<<endl;}
+ void modulus()
+ {cout<<"modulus is:"<<(val1%val2)<<endl;}
+};
+void main()
+{clrscr();
+ arith ao;
+ int x,y;
+ cout<<"enter first value:";cin>>x;
+ cout<<"enter second value:";cin>>y;
+ ao.inputdata(x,y);
+ ao.addition();
+ ao.substraction();
+ ao.multiplication();
+ ao.division();
+ ao.modulus();
+ getch();
+}

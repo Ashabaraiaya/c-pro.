@@ -1,0 +1,46 @@
+//hybride inheritance
+#include<conio.h>
+#include<iostream.h>
+class DemoA
+{
+ public:
+ void DisplayA()
+ {
+  cout<<"\n Good Morning Dem0 Constructor"<<endl;
+ }
+};
+class DemoB :public DemoA
+{
+ public:
+ void DisplayB()
+ {
+  cout<<"\n Good Monrinng DemoB Constructor"<<endl;
+ }
+};
+class DemoC :public DemoA
+{
+ public:
+ void DisplayC()
+ {
+  cout<<"\n Good morning DemoC Constuctor"<<endl;
+ }
+};
+class Hybride:public DemoB ,public DemoC,public DemoA
+{
+ public:
+ void DisplayH()
+ {
+  cout<<"\n Good Morning Hybridege Constructor."<<endl;
+ }
+};
+void main()
+{
+ clrscr();
+ Hybride h;
+ DemoA A;
+  A.DisplayA();
+ h.DisplayB();
+ h.DisplayC();
+ h.DisplayH();
+ getch();
+}

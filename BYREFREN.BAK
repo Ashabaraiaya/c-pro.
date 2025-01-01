@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void swapping (int *first,int *second)
+{
+ *first=*first+*second;
+ *second=*first-*second;
+ *first=*first-*second;
+}
+ void main()
+{
+ int mainv1,mainv2,*first,*secon;
+ cout<<"\n enter value:";cin>>mainv1;
+ cout<<"\n enter second value:";cin>>mainv2;
+  cout<<"after swapping first value is:"<<*first;
+  cout<<"\nand second value is:"<<*second;
+ swapping (*first,*second);
+ getch();
+}

@@ -1,0 +1,28 @@
+//write a code to perform left shift,right shift operator overloading
+//with the given string and at the end of string must put thank you message
+#include<conio.h>
+#include<iostream.h>
+#include<stdio.h>
+class ShiftOver
+{
+ public:
+ void operator<<(char*c)
+ {
+  puts(c);
+  puts("thank you ....");
+ }
+ void operator>>(char*c)
+ {
+  puts(c);
+  puts("thank you....");
+ }
+};
+void main()
+{
+ ShiftOver cout,cin;
+ clrscr();
+ cout<<" Good Morning";
+ char*c="good bye";
+ cin>>c;
+ getch();
+}

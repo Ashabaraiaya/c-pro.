@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+ float r,a,p,n,ci;
+ clrscr();
+ cout<<"enter principal amount :";cin>>p;
+ cout<<"\n enter interest rate :";cin>>r;
+ cout<<"\n enter number of year :";cin>>n;
+ a=p*(pow((1+r/100),n));
+ ci=a-p;
+ cout<<"\n compund interest i s:";cout<<ci;
+}
+

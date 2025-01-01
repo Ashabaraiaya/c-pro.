@@ -1,0 +1,19 @@
+//write a code to check inputed number is real number or natural number
+#include<iostream.h>
+void main()
+{
+ double num;
+ cout<<"enter a number:";cin>>num;
+ if(num>=0 && num==(int)num)
+ {
+  cout<<num<<"is natural number"<<endl;
+ }
+ else if(num>=0)
+  {
+   cout<<num<<"is a real number"<<endl;
+  }
+  else
+  {
+   cout<<num<<"is a not real number"<<endl;
+  }
+}
